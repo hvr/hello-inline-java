@@ -1,0 +1,14 @@
+with-compiler: ghc-8.0.2
+allow-older: inline-java:base
+
+packages: .
+
+package jni
+  extra-lib-dirs: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server
+  extra-include-dirs: /usr/lib/jvm/java-8-openjdk-amd64/include
+  extra-include-dirs: /usr/lib/jvm/java-8-openjdk-amd64/include/linux
+
+package jvm
+  extra-lib-dirs: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server
+  extra-include-dirs: /usr/lib/jvm/java-8-openjdk-amd64/include
+  extra-include-dirs: /usr/lib/jvm/java-8-openjdk-amd64/include/linux
